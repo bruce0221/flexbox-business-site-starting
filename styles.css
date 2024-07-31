@@ -1,0 +1,119 @@
+
+/* Universal style */
+html { 
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+header  { 
+    height: 4.65625rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    
+}
+
+header .navigation { 
+    font-size: 1.125rem ;
+    color: #004534;
+    font-weight: bold;
+}
+
+header .navigation a { 
+    font-size: 1.125rem ;
+    color: #004534;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav ul  { 
+    list-style-type: none;   /* Remove point on list  */
+    display: flex;
+    flex-direction: row;
+}
+
+header nav li { 
+    display: inline;  /* make the list on horizontal row  */ 
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+header .content img { 
+    height: 2.4rem;
+    width: 10rem;
+    padding: 1.125rem 2.625rem ;
+}
+
+.navigation  .cart_container { 
+    display: flex;
+    align-items: center;
+    gap: 0.25rem ;
+
+}
+
+.cart_container img { 
+    width: 1.25rem ;
+    height: 1.25rem;
+    
+}
+
+
+/* Main Content */
+
+.main_content { 
+    width: 100vw;
+}
+
+
+
+/* Banner */
+.banner_container  { 
+    width: 56.875rem;
+    height: 40.3125rem;
+}
+
+.banner_container img { 
+    width: auto;
+    height: auto;
+    max-width: 100vw;
+}
+
+
+/* Company Brief intro */
+
+.brief_intro { 
+    background-color: #fef7eb ;
+    padding: 2rem 0;
+    width: 100vw;
+}
+
+
+
+.brief_intro h1 { 
+    font-size: 4.6875rem;
+    text-align: center;
+    color: #004534;
+    padding:  1rem auto;
+}
+
+
+.brief_intro p { 
+    font-size: 1.125rem ;
+    color: #004534;
+    padding: 0 2rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60% ;
+    line-height: 1.6;
+    
+
+}
