@@ -556,13 +556,12 @@ header .content img {
     line-break: auto;
     position: absolute;
     width: 300%;
-    min-width: 200px;
     padding: 1.5rem;
     background-color:  #fac63c;
     border-radius: 10px;
     color:  #004534;
-    top: -23.6rem;
-    right: 0.5rem;
+    top: -24.3rem;
+    left: 1.1rem;
     line-height: 1.8;
     text-wrap: pretty;
 }
