@@ -10,6 +10,18 @@ body {
     padding: 0;
 }
 
+.pd_detail { 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+
+
+
 
 /* Header */
 header  { 
@@ -71,20 +83,23 @@ header .content img {
 
 .main_content { 
     width: 100vw;
+    display: flex;
 }
 
 
 
 /* Banner */
 .banner_container  { 
-    width: 56.875rem;
-    height: 40.3125rem;
+    width: 100vw;
+    height: 100vh;
+    
 }
 
 .banner_container img { 
-    width: auto;
-    height: auto;
-    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
@@ -94,9 +109,8 @@ header .content img {
     background-color: #fef7eb ;
     padding: 2rem 0;
     width: 100vw;
+    padding: 8rem 0;
 }
-
-
 
 .brief_intro h1 { 
     font-size: 4.6875rem;
@@ -105,15 +119,550 @@ header .content img {
     padding:  1rem auto;
 }
 
-
 .brief_intro p { 
     font-size: 1.125rem ;
     color: #004534;
     padding: 0 2rem;
     text-align: center;
     margin: 0 auto;
-    max-width: 60% ;
-    line-height: 1.6;
+    max-width: 40% ;
+    line-height: 2;
+}
+
+
+
+/* Product info section*/
+
+.product_section { 
+    background:  white;
+    display: flex;
+    flex-direction: column;
+    color: #004534;
+    padding: 2rem 3rem;
+}
+
+.product_section h1 { 
+    font-size: 3.75rem ;
+}
+
+
+/* Product container */
+
+.product_container { 
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     
+}
+
+
+/* Peach */
+ #pd01{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+#pd01  h2 { 
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+#pd01 .img_container img { 
+    height: 100%;
+    width: 100% ;
+    object-fit: cover;
+}
+
+/* Infomation Button */
+#pd01 .btn_info_pd01 { 
+    border: none;
+    background-color:  transparent;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+/* Popup info */
+[data-msg-01]{ 
+    position: relative;
+}
+
+[data-msg-01]:hover::after { 
+    content: attr(data-msg-01);
+    line-break: auto;
+    position: absolute;
+    width: 300%;
+    min-width: 200px;
+    padding: 3rem;
+    background-color:   #f9bcac;
+    border-radius: 10px;
+    color:  #004534;
+    top: -27.9rem;
+    left: 2rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+/* Add to cart button */
+#pd01 .bt_peach { 
+    background: white;
+    border-color: #004534;
+    border-radius: 30px ;
+    margin: 50px 0;
+    border: 2px solid #004534;
+    padding: 1rem 0.5rem;
+    max-width: 90%;
+    color: #004534;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#pd01 .bt_peach:hover {
+    background: #004534;
+    color: white;
+}
+
+
+
+
+
+/* Mango */
+#pd02 {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+#pd02 h2 { 
+    text-align: center;
+    padding-bottom: 1rem;
 
 }
+
+ #pd02 .img_container img { 
+    height: 100%;
+    width: 100% ;
+    object-fit: cover;
+}
+
+#pd02 .bt_mango { 
+    background: white;
+    border-color: #004534;
+    border-radius: 30px ;
+    margin: 50px 0;
+    border: 2px solid #004534;
+    padding: 1rem 0.5rem;
+    max-width: 90%;
+    color: #004534;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Infomation Button */
+#pd02 .btn_info_pd02 { 
+    border: none;
+    background-color:  transparent;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+
+
+/* Popup info */
+[data-msg-02]{ 
+    position: relative;
+}
+
+[data-msg-02]:hover::after { 
+    content: attr(data-msg-02);
+    line-break: auto;
+    position: absolute;
+    width: 300%;
+    min-width: 200px;
+    padding: 3rem;
+    background-color:  #fac63c;
+    border-radius: 10px;
+    color:  #004534;
+    top: -23.6rem;
+    left: 2rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+#pd02 .bt_mango:hover {
+    background: #004534;
+    color: white;
+}
+
+
+
+
+
+
+/* Pineapple */
+#pd03 {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+#pd03 h2 { 
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+ #pd03 .img_container img { 
+    height: 100%;
+    width: 100% ;
+    object-fit: cover;
+}
+
+
+#pd03 .bt_pineapple { 
+    background: white;
+    border-color: #004534;
+    border-radius: 30px ;
+    margin: 50px 0;
+    border: 2px solid #004534;
+    padding: 1rem 0.5rem;
+    max-width: 90%;
+    color: #004534;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#pd03 .bt_pineapple:hover {
+    background: #004534;
+    color: white;
+}
+
+
+/* Infomation Button */
+#pd03 .btn_info_pd03 { 
+    border: none;
+    background-color:  transparent;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+
+
+/* Popup info */
+[data-msg-03]{ 
+    position: relative;
+}
+
+[data-msg-03]:hover::after { 
+    content: attr(data-msg-03);
+    line-break: auto;
+    position: absolute;
+    width: 300%;
+    min-width: 200px;
+    padding: 3rem;
+    background-color:  #fac63c;
+    border-radius: 10px;
+    color:  #004534;
+    top: -23.6rem;
+    left: 2rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cherry */
+#pd04 {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+#pd04 h2 { 
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+ #pd04 .img_container img { 
+    height: 100%;
+    width: 100% ;
+    object-fit: cover;
+}
+
+#pd04 .bt_cherry { 
+    background: white;
+    border-color: #004534;
+    border-radius: 30px ;
+    margin: 50px 0;
+    border: 2px solid #004534;
+    padding: 1rem 0.5rem;
+    max-width: 90%;
+    color: #004534;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#pd04 .bt_cherry:hover {
+    background: #004534;
+    color: white;
+}
+
+
+/* Infomation Button */
+#pd04 .btn_info_pd04 { 
+    border: none;
+    background-color:  transparent;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+
+
+/* Popup info */
+[data-msg-04]{ 
+    position: relative;
+}
+
+[data-msg-04]:hover::after { 
+    content: attr(data-msg-04);
+    line-break: auto;
+    position: absolute;
+    width: 300%;
+    min-width: 200px;
+    padding: 3rem;
+    background-color:  #fac63c;
+    border-radius: 10px;
+    color:  #004534;
+    top: -23.6rem;
+    left: 2rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Lime */
+#pd05 {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+#pd05 h2 { 
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+ #pd05 .img_container img { 
+    height: 100%;
+    width: 100% ;
+    object-fit: cover;
+}
+
+#pd05 .bt_lime { 
+    background: white;
+    border-color: #004534;
+    border-radius: 30px ;
+    margin: 50px 0;
+    border: 2px solid #004534;
+    padding: 1rem 0.5rem;
+    max-width: 90%;
+    color: #004534;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#pd05 .bt_lime:hover {
+    background: #004534;
+    color: white;
+}
+
+
+
+/* Infomation Button */
+#pd05 .btn_info_pd05 { 
+    border: none;
+    background-color:  transparent;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+
+
+/* Popup info */
+[data-msg-05]{ 
+    position: relative;
+}
+
+[data-msg-05]:hover::after { 
+    content: attr(data-msg-05);
+    line-break: auto;
+    position: absolute;
+    width: 300%;
+    min-width: 200px;
+    padding: 1.5rem;
+    background-color:  #fac63c;
+    border-radius: 10px;
+    color:  #004534;
+    top: -23.6rem;
+    right: 0.5rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For single product section */
+
+
+/*
+.product_section_01 { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2rem;
+    width: 100vw;
+}
+
+.product_img { 
+    max-width: 55%; 
+}
+
+.product_img img { 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.product_spec { 
+    padding-top: 80px;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    color:  #004534;
+    line-height: 1.3;
+}
+
+.product_spec h1 { 
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+*/
+
+/*
+
+.product_peach {
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    background: #f9bcac;
+    padding: 0 2rem;
+}
+
+.product_peach .peach_button { 
+    background: #f9bcac;
+    border-color: #004534;
+    border-radius: 30px ;
+    margin: 50px 0;
+    border: 2px solid #004534;
+    padding: 1rem 0.5rem;
+    max-width: 90%;
+    color: #004534;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.peach_button:hover { 
+    background: #004534;
+    color: white;
+
+}
+
+
+*/
+
+
+
