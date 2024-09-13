@@ -10,6 +10,8 @@ body {
     padding: 0;
 }
 
+
+
 .pd_detail { 
     display: flex;
     flex-direction: row;
@@ -19,6 +21,24 @@ body {
     column-gap: 1rem;
 }
 
+.team_info_container h3, h5 { 
+    text-align: center;
+    margin: 0;
+    color: #004534;
+}
+
+.team_info_container .contact_icon { 
+    display: flex;
+    justify-content: center ;
+    padding: 1.5rem;
+}
+
+.personal_icon { 
+    margin-bottom: 2rem;
+    border-radius: 50% ;
+    background-color: white;
+    overflow: hidden;
+}
 
 
 
@@ -88,6 +108,9 @@ header .content img {
 
 
 
+
+
+
 /* Banner */
 .banner_container  { 
     width: 100vw;
@@ -139,6 +162,7 @@ header .content img {
     flex-direction: column;
     color: #004534;
     padding: 2rem 3rem;
+    width: 90vw;
 }
 
 .product_section h1 { 
@@ -155,7 +179,6 @@ header .content img {
     align-items: stretch;
     flex-wrap: nowrap;
     overflow-x: auto;
-    
 }
 
 
@@ -394,13 +417,6 @@ header .content img {
 
 
 
-
-
-
-
-
-
-
 /* Cherry */
 #pd04 {
     width: 40rem;
@@ -474,18 +490,6 @@ header .content img {
     line-height: 1.8;
     text-wrap: pretty;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -568,57 +572,250 @@ header .content img {
 
 
 
+@media only screen and (max-width:768px) { 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* For single product section */
-
-
-/*
-.product_section_01 { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 2rem;
-    width: 100vw;
-}
-
-.product_img { 
-    max-width: 55%; 
-}
-
-.product_img img { 
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.product_spec { 
-    padding-top: 80px;
-    max-width: 30%;
+.product_container { 
     display: flex;
     flex-direction: column;
+    justify-content: center ;
+    align-items: center ;
+}
+
+
+ /* Peach */
+
+ #pd01{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+[data-msg-01]:hover::after { 
+    content: attr(data-msg-01);
+    line-break: auto;
+    position: absolute;
+    width: 100%;
+    min-width: 200px;
+    padding: 1.5rem;
+    background-color:   #f9bcac;
+    border-radius: 10px;
     color:  #004534;
-    line-height: 1.3;
+    top: -25.5rem;
+    left: -0.9rem;
+    line-height: 1.8;
+    text-wrap: pretty;
 }
 
-.product_spec h1 { 
-    font-size: 60px;
+
+/* Manago */
+#pd02{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+[data-msg-02]:hover::after { 
+    content: attr(data-msg-02);
+    line-break: auto;
+    position: absolute;
+    width: 100%;
+    min-width: 200px;
+    padding: 1.5rem;
+    background-color: #fac63c;
+    border-radius: 10px;
+    color:  #004534;
+    top: -21.5rem;
+    left: -2rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+
+/* Pineapple */
+
+#pd03{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+[data-msg-03]:hover::after { 
+    content: attr(data-msg-03);
+    line-break: auto;
+    position: absolute;
+    width: 100%;
+    min-width: 200px;
+    padding: 1.5rem;
+    background-color: #f4e55b;
+    border-radius: 10px;
+    color:  #004534;
+    top: -21.5rem;
+    left: -4.3rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+
+
+
+/* Cherry */
+
+#pd04{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+[data-msg-04]:hover::after { 
+    content: attr(data-msg-04);
+    line-break: auto;
+    position: absolute;
+    width: 100%;
+    min-width: 200px;
+    padding: 1.5rem;
+    background-color: #f9cddd;
+    border-radius: 10px;
+    color:  #004534;
+    top: -21.5rem;
+    left: -2rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+
+
+/* Lime */
+
+#pd05{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+[data-msg-05]:hover::after { 
+    content: attr(data-msg-05);
+    line-break: auto;
+    position: absolute;
+    width: 100%;
+    min-width: 200px;
+    padding: 1.5rem;
+    background-color: #cde981;
+    border-radius: 10px;
+    color:  #004534;
+    top: -17rem;
+    left: -3rem;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+
+}
+
+
+/* Team Info */
+
+.team_info { 
+    background-color:  #E6F3F2;
+    width: 100vw;
+    padding-bottom: 1rem;
+}
+
+
+.team_info h1 { 
+    padding-top: 2rem;
+    margin: 4rem;
+    font-size: 3.75rem;
+    color: #004534;
+}
+
+.team_info_container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.mem_01 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.mem_01 h3 { 
+    padding-bottom: 1rem;
+}
+
+
+.mem_02 h3 { 
+    padding-bottom: 1rem;
+}
+
+
+
+.mem_03 h3 { 
+    padding-bottom: 1rem;
+}
+
+.mem_03 .personal_icon { 
+    overflow: hidden;
+}
+
+.contact_icon { 
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:768px) {
+    .team_info {
+        width: 100vw;
+    }
+    
+    .team_info_container{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 6rem ;
+    }
+
+    .team_info .mem_01 { 
+        align-items: center;
+    }
+
+    .team_info .mem_02 { 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team_info .mem_03 { 
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
 }
 
 
@@ -627,41 +824,125 @@ header .content img {
 
 
 
-*/
 
-/*
 
-.product_peach {
-    width: 100%; 
+
+
+
+
+/* Footer */
+
+
+footer { 
+    background-color: #004534;
+    justify-content: space-between;
+}
+
+.footer_container { 
+    display: flex;
+    flex-direction: row;
+    padding: 3.5rem 3.5rem;
+    column-gap: 15rem;
+}
+
+@media only screen and (max-width: 768px) { 
+
+    .footer_container { 
+        max-width: 90%;
+        display: flex;
+        flex-shrink: 2;
+        flex-wrap: wrap;
+        row-gap: 5rem ;
+    }
+}
+
+
+
+/* Footer - Contact us */
+.contactus { 
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem  ;
+}
+
+.contactus .footer_company_logo { 
+    width: 70% ;
+    height: 70%;
+}
+
+.contact_method { 
     display: flex;
     flex-direction: row;
     column-gap: 2rem;
-    background: #f9bcac;
-    padding: 0 2rem;
+    cursor: pointer;
 }
 
-.product_peach .peach_button { 
-    background: #f9bcac;
+
+/* Footer - Help */
+
+.help  { 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0 2rem;
+    white-space: nowrap;
+}
+
+
+
+.help h3 { 
+    font-weight: bold;
+}
+
+.help ul { 
+    list-style-type: none;
+    padding: 0;
+    line-height: 3rem;
+}
+
+.help ul li { 
+    cursor: pointer;
+}
+
+
+
+/* Footer - getuseremail */
+
+.getuseremail { 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.getuseremail h2, h4 { 
+    color: white;
+}
+
+.getuseremail h2 { 
+    font-weight: bold;
+}
+
+.getuseremail h4 { 
+    font-size: small;
+}
+
+#useremail { 
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.getuseremail .subscribe { 
+    width: 50%;
+    background-color: #004534;
+    color: white;
     border-color: #004534;
     border-radius: 30px ;
-    margin: 50px 0;
-    border: 2px solid #004534;
-    padding: 1rem 0.5rem;
-    max-width: 90%;
-    color: #004534;
-    font-weight: bold;
-    font-size: 16px;
-    
+    border: 2px solid white;
+    padding: 1rem;
+    cursor: pointer;
 }
 
-.peach_button:hover { 
-    background: #004534;
-    color: white;
-
+.getuseremail .subscribe:hover { 
+    color: black;
+    background-color: white;
 }
-
-
-*/
-
-
-
